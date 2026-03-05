@@ -19,8 +19,6 @@ const Home = () => {
                     <h1 className='hover:text-blue-500'>{p.title}</h1>
                     </Link>
                 ))}
-                
-
             </div>
         </>
         
