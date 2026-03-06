@@ -7,7 +7,7 @@ const Nav = () => {
 
     let distinct_catagory = products && products.reduce((acc,cv) => [...acc,cv.category],[]);
     distinct_catagory = [...new Set(distinct_catagory)];
-    console.log(distinct_catagory);
+    
 
     const color = () => {
       return `rgba(${(Math.random()*255).toFixed()},${(Math.random()*255).toFixed()},${(Math.random()*255).toFixed()},0.4)`

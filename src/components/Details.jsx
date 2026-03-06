@@ -41,7 +41,9 @@ const Details = () => {
                 <h3 className="text-zinc-400 my-5">{product.category}</h3>
                 <h2 className="text-red-400 mb-3">$ {product.price}</h2>
                 <p className="mb-[5%]">{product.description}</p>
-                <Link className='mr-5 py-2 px-5 border rounded border-blue-200 text-blue-300'>Edit</Link>
+                <Link to={`/edit/${product.id}`} className='mr-5 py-2 px-5 border rounded border-blue-200 text-blue-300'>
+                    Edit
+                </Link>
                 <button onClick = {() => ProductDeleteHandler(product.id)} className='cursor-pointer py-2 px-5 border rounded border-red-200 text-red-300'>
                     Delete
                 </button>
